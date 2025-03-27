@@ -192,3 +192,18 @@ Authorization: Bearer Token
 2|avP79Ev6C4lHa7nptUMsZumbifl4NwXIeTsECIf73e1c6ea8
 ```
 ![Dashboard Screenshot](public/assets/images/screenshots/api_post_delete.png)
+
+### Github
+
+```bash
+If you download this project from Github
+
+composer install
+npm install
+connect database to .env
+php artisan key:generate
+php artisan storage:link
+php artisan migrate --seed
+npm run dev
+php artisan serve
+```
