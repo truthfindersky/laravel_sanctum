@@ -157,7 +157,8 @@ Body raw JSON
 ```
 ![Dashboard Screenshot](public/assets/images/screenshots/api_post_store.png)
 
-update post: 
+update post:
+
 ```bash
 http://127.0.0.1:8000/api/posts/11
 ```
@@ -175,6 +176,7 @@ Body raw JSON
     "title": "title update",
     "description": "description update"
 }
+```
 ![Dashboard Screenshot](public/assets/images/screenshots/api_post_update.png)
 
 delete post: 
