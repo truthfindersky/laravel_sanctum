@@ -120,3 +120,73 @@ app/Policies/PostPolicy.php
 ```bash
 php artisan make:policy PostPolicy --model=Post
 ```
+## Post Postman
+
+post index: 
+```bash
+http://127.0.0.1:8000/api/posts
+```
+Headers: 
+```bash
+Key:Accept Value:application/json
+```
+Authorization: Bearer Token
+```bash
+2|avP79Ev6C4lHa7nptUMsZumbifl4NwXIeTsECIf73e1c6ea8
+```
+![Dashboard Screenshot](public/assets/images/screenshots/api_post_index.png)
+
+create post: 
+```bash
+http://127.0.0.1:8000/api/posts
+```
+Headers: 
+```bash
+Key:Accept Value:application/json
+```
+Authorization: Bearer Token
+```bash
+2|avP79Ev6C4lHa7nptUMsZumbifl4NwXIeTsECIf73e1c6ea8
+```
+Body raw JSON
+```bash
+{
+    "title": "title 111",
+    "description": "description 111"
+}
+```
+![Dashboard Screenshot](public/assets/images/screenshots/api_post_store.png)
+
+update post: 
+```bash
+http://127.0.0.1:8000/api/posts/11
+```
+Headers: 
+```bash
+Key:Accept Value:application/json
+```
+Authorization: Bearer Token
+```bash
+2|avP79Ev6C4lHa7nptUMsZumbifl4NwXIeTsECIf73e1c6ea8
+```
+Body raw JSON
+```bash
+{
+    "title": "title update",
+    "description": "description update"
+}
+![Dashboard Screenshot](public/assets/images/screenshots/api_post_update.png)
+
+delete post: 
+```bash
+http://127.0.0.1:8000/api/posts/11
+```
+Headers: 
+```bash
+Key:Accept Value:application/json
+```
+Authorization: Bearer Token
+```bash
+2|avP79Ev6C4lHa7nptUMsZumbifl4NwXIeTsECIf73e1c6ea8
+```
+![Dashboard Screenshot](public/assets/images/screenshots/api_post_delete.png)
