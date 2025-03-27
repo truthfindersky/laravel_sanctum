@@ -52,8 +52,22 @@ Route::post('register', [AuthController::class, 'register']);
 Route::post('login', [AuthController::class, 'login']);
 Route::post('logout', [AuthController::class, 'logout'])->middleware('auth:sanctum');
 ```
-postman: http://127.0.0.1:8000/api/register
+postman registration: 
+```bash
+http://127.0.0.1:8000/api/register
+```
+```bash
 Headers: Key:Accept Value:application/json
+```
+```bash
+{
+    "name": "Laz",
+    "email": "laz@gmail.com",
+    "password": "12345678",
+    "password_confirmation": "12345678"
+}
+```
+
 ![Dashboard Screenshot](public/assets/images/screenshots/api_registration.png)
 
 postman: http://127.0.0.1:8000/api/login
