@@ -91,9 +91,18 @@ Body raw JSON
 ```
 ![Dashboard Screenshot](public/assets/images/screenshots/api_login.png)
 
-postman: http://127.0.0.1:8000/api/logout
-Headers: Key:Accept Value:application/json
+logout url: 
+```bash
+http://127.0.0.1:8000/api/logout
+```
+Headers: 
+```bash
+Key:Accept Value:application/json
+```
 Authorization: Bearer Token
+```bash
+2|avP79Ev6C4lHa7nptUMsZumbifl4NwXIeTsECIf73e1c6ea8
+```
 ![Dashboard Screenshot](public/assets/images/screenshots/api_logout.png)
 
 ### 5. Post
