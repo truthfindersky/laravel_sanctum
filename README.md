@@ -105,13 +105,18 @@ Authorization: Bearer Token
 ```
 ![Dashboard Screenshot](public/assets/images/screenshots/api_logout.png)
 
-### 5. Post
+## Post
+app/Models/Post.php
+database/migrations/2025_03_25_132601_create_posts_table.php
+database/factories/PostFactory.php
+database/seeders/PostSeeder.php
+app/Models/User.php
 
 ```bash
 php artisan make:model Post -mfs
 ```
-### 6. Policy
-
+## Post Policy
+app/Policies/PostPolicy.php
 ```bash
 php artisan make:policy PostPolicy --model=Post
 ```
